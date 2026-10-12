@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Book Exchange | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">📚 Campus Book Exchange</a>
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">READ MORE. SPEND LESS. SHARE KNOWLEDGE.</p>
+        <h1 id="mainHeading">Your next great read is on campus.</h1>
+        <p>Exchange, share, and discover books with fellow students. Give your old books a new chapter and find your next study companion.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="books.html">Browse available books</a>
+          <a class="button button-outline" href="list-book.html">List your book</a>
+        </div>
+        <button class="button button-light" id="changeHeadingBtn" type="button">Change main heading</button>
+      </div>
+    </section>
+
+    <section class="section container" id="featuredSection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">STUDENT PICKS</p>
+          <h2>Featured books</h2>
+          <p class="muted">A few reads ready for a new owner.</p>
+        </div>
+        <div class="inline-actions">
+          <button class="button button-secondary" id="changeCardColorBtn" type="button">Change a card colour</button>
+          <button class="button button-outline-dark" id="toggleFeaturedBtn" type="button">Hide featured books</button>
+        </div>
+      </div>
+      <div class="book-grid">
+        <article class="book-card featured-card">
+          <img src="images/Algorithms1.jpg"alt="Introduction to Algorithms book cover"class="real-book-image">
+          <!-- <div span>01</span><strong>THE<br>ALGORITHM</strong><small>COMPUTER SCIENCE</small></div> -->
+          <div class="book-info"><span class="tag">Computer Science</span><h3>Introduction to Algorithms</h3><p class="author">Thomas H. Cormen and others</p><p class="muted">A useful companion for problem-solving and programming fundamentals.</p></div>
+        </article>
+        <article class="book-card featured-card">
+          <img src="images/physics.jpg" alt="Introduction to Physics book cover"class="real-book-image">
+          <!-- <div class="book-cover cover-gold"><span>02</span><strong>THE<br>WORLD OF<br>PHYSICS</strong><small>SCIENCE</small></div> -->
+          <div class="book-info"><span class="tag">Physics</span><h3>Concepts of Physics</h3><p class="author">H. C. Verma</p><p class="muted">Build a stronger understanding of core physics concepts.</p></div>
+        </article>
+        <article class="book-card featured-card">
+          <!-- <div class="book-cover cover-green"><span>03</span><strong>THINK<br>BETTER</strong><small>PERSONAL GROWTH</small></div> -->
+           <img src="images/Atomic.jpg" alt="Introduction to Atomic Hab book cover"class="real-book-image">
+          <div class="book-info"><span class="tag">Self-development</span><h3>Atomic Habits</h3><p class="author">James Clear</p><p class="muted">Small changes and practical ideas for building habits.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div class="container">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2>Pass a book. Start a story.</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><h3>Explore</h3><p>Browse books shared by other students.</p></div>
+          <div class="step"><span>2</span><h3>Request</h3><p>Mark a book you would like to borrow or exchange.</p></div>
+          <div class="step"><span>3</span><h3>Share</h3><p>List a book you no longer need.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Campus Book Exchange</p><p>Built for students, powered by sharing.</p></div></footer>
+</body>
+</html>

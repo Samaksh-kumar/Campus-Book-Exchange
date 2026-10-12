@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Book Exchange | Browse Books</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">📚 Campus Book Exchange</a>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a><a class="active" href="books.html">Browse Books</a><a href="list-book.html">List a Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <p class="eyebrow">THE CAMPUS SHELF</p>
+      <h1>Find your next study companion.</h1>
+      <p>Explore books available for sharing or exchange. Choose a title and send a request.</p>
+    </section>
+
+    <section class="search-panel">
+      <label for="bookTitleInput">Looking for a specific title?</label>
+      <div class="search-row">
+        <input id="bookTitleInput" type="text" placeholder="e.g. Concepts of Physics">
+        <button class="button button-primary" id="showBookBtn" type="button">Show Book</button>
+      </div>
+      <p class="message" id="showBookResult" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><div><h2>Available books</h2><p class="muted">Select “Mark as Requested” to show your interest.</p></div>
+        <button class="button button-secondary" id="changeBookAppearanceBtn" type="button">Change a book card</button>
+      </div>
+      <div class="book-grid browse-grid">
+        <article class="book-card browse-card">
+          <!-- <div class="book-cover cover-blue"><span>01</span><strong>THE<br>ALGORITHM</strong><small>COMPUTER SCIENCE</small></div> -->
+           <img src="images/Algorithms1.jpg"alt="Introduction to Algorithms book cover"class="real-book-image">
+          <div class="book-info"><span class="tag">Computer Science</span><h3>Introduction to Algorithms</h3><p class="author">Thomas H. Cormen and others</p><p class="condition"><strong>Condition:</strong> Good</p><button class="button button-primary request-btn" type="button">Mark as Requested</button><p class="message request-message" role="status"></p></div>
+        </article>
+        <article class="book-card browse-card">
+          <!-- <div class="book-cover cover-gold"><span>02</span><strong>THE<br>WORLD OF<br>PHYSICS</strong><small>SCIENCE</small></div> -->
+          <img src="images/physics.jpg" alt="Introduction to Physics book cover"class="real-book-image">
+          <div class="book-info"><span class="tag">Physics</span><h3>Concepts of Physics</h3><p class="author">H. C. Verma</p><p class="condition"><strong>Condition:</strong> Very good</p><button class="button button-primary request-btn" type="button">Mark as Requested</button><p class="message request-message" role="status"></p></div>
+        </article>
+        <article class="book-card browse-card">
+          <!-- <div class="book-cover cover-green"><span>03</span><strong>THINK<br>BETTER</strong><small>PERSONAL GROWTH</small></div> -->
+           <img src="images/Atomic.jpg" alt="Introduction to Atomic Habits book cover"class="real-book-image">
+          <div class="book-info"><span class="tag">Self-development</span><h3>Atomic Habits</h3><p class="author">James Clear</p><p class="condition"><strong>Condition:</strong> Like new</p><button class="button button-primary request-btn" type="button">Mark as Requested</button><p class="message request-message" role="status"></p></div>
+        </article>
+        <article class="book-card browse-card">
+          <!-- <div class="book-cover cover-purple"><span>04</span><strong>THE ART<br>OF CODE</strong><small>PROGRAMMING</small></div> -->
+           <img src="images/Clean Code.jpg" alt="Introduction to Clean Code book cover"class="real-book-image">
+          <div class="book-info"><span class="tag">Programming</span><h3>Clean Code</h3><p class="author">Robert C. Martin</p><p class="condition"><strong>Condition:</strong> Good</p><button class="button button-primary request-btn" type="button">Mark as Requested</button><p class="message request-message" role="status"></p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Campus Book Exchange</p><p>Built for students, powered by sharing.</p></div></footer>
+</body>
+</html>

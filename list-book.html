@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Book Exchange | List a Book</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">📚 Campus Book Exchange</a>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="books.html">Browse Books</a><a class="active" href="list-book.html">List a Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-intro">
+      <p class="eyebrow">GIVE YOUR BOOK A NEW CHAPTER</p>
+      <h1>Share a book with your campus.</h1>
+      <p>Fill in the details below to create a sample listing. This demonstration does not save data to a database.</p>
+    </section>
+
+    <section class="form-layout">
+      <div class="form-aside">
+        <div class="aside-icon">📖</div>
+        <h2>One book can help someone go further.</h2>
+        <p>Share course books, reference guides, or favourite reads with the campus community.</p>
+        <ul><li>Help another student learn</li><li>Keep useful books in circulation</li><li>Make space on your shelf</li></ul>
+      </div>
+      <div class="form-panel">
+        <div class="form-heading-row"><h2 id="formHeading">List your book</h2><button class="button button-outline-dark button-small" id="changeFormHeadingBtn" type="button">Change heading size</button></div>
+        <button class="button button-outline-dark button-small form-toggle" id="toggleFormBtn" type="button">Hide form</button>
+        <form id="bookForm" novalidate>
+          <div class="form-field"><label for="studentName">Student Name *</label><input id="studentName" name="studentName" type="text" placeholder="Enter your full name" required></div>
+          <div class="form-field"><label for="newBookTitle">Book Title *</label><input id="newBookTitle" name="bookTitle" type="text" placeholder="Enter book title" required></div>
+          <div class="form-field"><label for="authorName">Author *</label><input id="authorName" name="authorName" type="text" placeholder="Enter author's name" required></div>
+          <div class="form-field"><label for="category">Subject / Category *</label><select id="category" name="category" required><option value="">Choose a category</option><option>Computer Science</option><option>Programming</option><option>Physics</option><option>Mathematics</option><option>Business</option><option>Literature</option><option>Self-development</option><option>Other</option></select></div>
+          <div class="form-field"><label for="condition">Book Condition *</label><select id="condition" name="condition" required><option value="">Choose condition</option><option>Like new</option><option>Very good</option><option>Good</option><option>Acceptable</option></select></div>
+          <button class="button button-primary submit-button" type="submit">Submit book listing</button>
+        </form>
+        <p class="message form-message" id="formMessage" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Campus Book Exchange</p><p>Built for students, powered by sharing.</p></div></footer>
+</body>
+</html>
